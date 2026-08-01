@@ -9,14 +9,13 @@ let listOfItems = [
     'angular',
     'node.js'
 ];
-
 document.write('<ul>');
 
-let i = 0;
+    let i = 0;
 
-while (i < listOfItems.length) {
-    document.write(`<li>${listOfItems[i]}</li>`);
-    i++;
-}
+    while (i < listOfItems.length) {
+        document.write(`<li>${listOfItems[i]}</li>`);
+        i++;
+    }
 
 document.write('</ul>');

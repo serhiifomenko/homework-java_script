@@ -5,16 +5,15 @@
 // Великими літерами прописанні властивості об’єкту які потрібно впровадити в шаблон
 
 let products = [
-
     {
         title: 'milk',
         price: 22,
-        image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300×300-3.jpg'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiGgaNcc01wwyPOrxG1qlZbV4wxYyo_Iya501WIm6SO39WzrFiwRYE21acHaGB7TFHh4ACvA&s'
     },
     {
         title: 'juice',
         price: 27,
-        image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvW3q7xxHwj_M9kpMbeCCukaiMgXUA7IP5fohUblsbIA&s=10'
     },
     {
         title: 'tomato',
@@ -24,7 +23,7 @@ let products = [
     {
         title: 'tea',
         price: 15,
-        image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTSydy5FSFg-RiBittwCulEGVrBCmJUsFPfcW8vyZCTYpTleuPO78JvGE&s=10'
     },
 ];
 let i = 0;
@@ -35,7 +34,7 @@ while (i < products.length) {
             <h3 class="product-title">
                 ${products[i].title}. Price - ${products[i].price}
             </h3>
-            <img src="${products[i].image} "alt="" class="product-image">
+            <img src="${products[i].image} "alt="images" class="product-image">
         </div>
     `);
     i++;
