@@ -76,3 +76,34 @@ let coursesArray = [
         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
     }
 ];
+
+coursesArray.forEach((course) => {
+    const bigCourse = document.createElement('div');
+
+    const courseTitle = document.createElement('div');
+    const courseMonthDuration = document.createElement('div');
+    const courseHourDuration = document.createElement('div');
+    const courseModules = document.createElement('div');
+
+    bigCourse.appendChild(courseTitle);
+    bigCourse.appendChild(courseMonthDuration);
+    bigCourse.appendChild(courseHourDuration);
+    bigCourse.appendChild(courseModules);
+
+    courseTitle.innerText = course.title;
+    courseMonthDuration.innerText = course.monthDuration;
+    courseHourDuration.innerText = course.hourDuration;
+
+    const modulesList = document.createElement('ul');
+    course.modules.forEach((module) => {
+        const li = document.createElement('li');
+
+        li.innerText = module;
+
+        modulesList.appendChild(li);
+    });
+    courseModules.appendChild(modulesList);
+
+    document.body.appendChild(bigCourse);
+});
+
